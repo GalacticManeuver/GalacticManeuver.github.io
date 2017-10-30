@@ -1,1 +1,0 @@
-# GalacticManeuver.github.io
