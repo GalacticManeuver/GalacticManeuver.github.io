@@ -1,0 +1,27 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.any  {
+    background-color: #404040d0;
+}
+
+.reb {
+    background-color: #cc0000b0;
+}
+
+.imp {
+    background-color: #000066c0;
+}
+
+.scm {
+    background-color: #009900b0;
+}
+
+table {
+    text-align: left;
+}
+
+tr:nth-child(even) {background-color: #808080}
+tr:hover{background-color:#ffffff}
