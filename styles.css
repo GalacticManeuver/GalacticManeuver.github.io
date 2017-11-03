@@ -3,25 +3,44 @@ body {
     color: #ffffff;
 }
 
-.any  {
-    background-color: #404040d0;
+.topnav {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
 }
 
-.reb {
-    background-color: #cc0000b0;
+.topnav:hover {
+    background-color:#ffffff
 }
 
-.imp {
-    background-color: #000066c0;
-}
-
-.scm {
-    background-color: #009900b0;
-}
+.any  {background-color: #404040d0;}
+.any:hover {background-color: #606060d0;}
+.any:link {color: #bfbfbf}
+.reb {background-color: #cc0000b0;}
+.reb:hover {background-color: #ec2020b0;}
+.reb:link {color: #ff00bf}
+.imp {background-color: #000066c0;}
+.imp:hover {background-color: #202086c0;}
+.imp:link {color: #66ccff}
+.scm {background-color: #009900b0;}
+.scm:hover {background-color: #20b920b0;}
+.scm:link {color: #bf8040}
 
 table {
     text-align: left;
 }
 
 tr:nth-child(even) {background-color: #808080}
-tr:hover{background-color:#ffffff}
+
+h1 {
+    clear:both;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: black;
+}
