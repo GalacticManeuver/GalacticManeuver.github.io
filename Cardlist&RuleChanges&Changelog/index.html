@@ -1,47 +1,364 @@
 <!DOCTYPE html>
 <html>
+<html lang="en"> 
 <title>A Fan Made X-Wing Miniatures Rebalance Webiste & Squad Builder</title>
 <head>
+  <meta charset="utf-8"/>
   <link rel="stylesheet" href="../styles.css">
+  <script src="../drinking.js"></script>
 </head>
-<body>
-
 
 <div>
   <a class="topnav any" href="../index.html">Home</a>
   <a class="topnav reb" href="../Rebel/index.html">Rebel</a>
   <a class="topnav imp" href="../Imperial/index.html">Imperial</a>
-  <a class="topnav scm" href="../Scum&Villany/index.html">Scum&Villany</a>
-  <a class="topnav any" href="#">Cardlist&RuleChanges&Changelog</a>
+  <a class="topnav scm" href="../Scum&Villany/index.html">Scum & Villany</a>
+  <a class="topnav any" href="#">Card list & Rule Changes & Change log</a>
 </div>
 <div style="clear:both;"></div>
 
-<h1>This is the cardlist & rulechanges page</h1>
+<p id="a"></p>
 
+<h1>This is the card list & rule changes & Change log page</h1>
+
+<h2> Rebel ships:</h2>
 <table>
   <tr>
-    <th title="and this is where card info will appear" class="any">This is how Any Faction cards will appear</th>
+    <th title="" class="shp">A-Wing:</th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="any">Hover over us!</th>
+    <th onclick="showstats('Prototype Pilot')" class="reb rel">Prototype Pilot (15*)<span id="Prototype Pilot" class="invis"><span class="pilotskill">1</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">2</span><br>Actions: Focus, Targetlock, Boost, Evade.<br><br>No Card Text.<br><br>Upgrade Slot: Missile.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="reb">This is how Rebel only cards will appear</th>
+    <th onclick="showstats('Green Squadron Pilot')" class="reb rel">Green Squadron Pilot (17*)<span id="Green Squadron Pilot" class="invis"><span class="pilotskill">3</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">2</span><br>Actions: Focus, Targetlock, Boost, Evade.<br><br>No Card Text.<br><br>Upgrade Slots: Missile, Elite Pilot Talent.</span></th> 
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="reb">Hover over us!</th>
+    <th onclick="showstats('Gemmer Sojan')" class="reb rel">&#x2022;Gemmer Sojan (19*)<span id="Gemmer Sojan" class="invis"><span class="pilotskill">5</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">2</span><br>Actions: Focus, Targetlock, Boost, Evade.<br><br>While you are at Range 1 of at least 1 enemy ship, increase your agility value by 1.<br><br>Upgrade Slot: Missile.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="imp">This is how Imperial only cards will appear</th>
+    <th onclick="showstats('Arvel Crynyd')" class="reb rel">&#x2022;Arvel Crynyd (20*)<span id="Arvel Crynyd" class="invis"><span class="pilotskill">6</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">2</span><br>Actions: Focus, Targetlock, Boost, Evade.<br><br>You may declare an enemy ship inside your firing arc that you are touching as the target of your attack.<br><br>Upgrade Slot: Missile.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="imp">Hover over us!</th>
+    <th onclick="showstats('Jake Farrell')" class="reb rel">&#x2022;Jake Farrell (22*)<span id="Jake Farrell" class="invis"><span class="pilotskill">7</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">2</span><br>Actions: Focus, Targetlock, Boost, Evade.<br><br>After you perform a focus action or are assigned a focus token, you may perform a free boost or barrel roll action.<br><br>Upgrade Slots: Missile, Elite Pilot Talent.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="scm">This is how Scum & Villany only cards will appear</th>
+    <th onclick="showstats('Tycho Celchu')" class="reb rel">&#x2022;Tycho Celchu (23*)<span id="Tycho Celchu" class="invis"><span class="pilotskill">8</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">2</span><br>Actions: Focus, Targetlock, Boost, Evade.<br><br>You may perform actions even while you have stress tokens.<br><br>Upgrade Slot: Missile, Elite Pilot Talent.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="scm">Hover over us!</th>
+    <th title="" class="shp">B-Wing:</th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Blue Squadron Pilot')" class="reb rel">Blue Squadron Pilot (22)<span id="Blue Squadron Pilot" class="invis"><span class="pilotskill">2</span><span class="attack">3</span><span class="agility">1</span><span class="hull">3</span><span class="shields">5</span><br>Actions: Focus, Targetlock, Barrel Roll<br><br>No Card Text.<br><br>Upgrade Slots: Sensor, Cannon, Torpedo, Torpdeo.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Dagger Squadron Pilot')" class="reb rel">Dagger Squadron Pilot (22)<span id="Dagger Squadron Pilot" class="invis"><span class="pilotskill">4</span><span class="attack">3</span><span class="agility">1</span><span class="hull">3</span><span class="shields">5</span><br>Actions: Focus, Targetlock, Barrel Roll<br><br>No Card Text.<br><br>Upgrade Slots: Sensor, Cannon, Torpedo, Torpdeo.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Nera Dantels')" class="reb rel">&#x2022;Nera Dantels (26)<span id="Nera Dantels" class="invis"><span class="pilotskill">5</span><span class="attack">3</span><span class="agility">1</span><span class="hull">3</span><span class="shields">5</span><br>Actions: Focus, Targetlock, Barrel Roll<br><br>You can perform Torpedoes secondary weapon attacks against enemy ships outside your firing arc.<br><br>Upgrade Slots: Sensor, Cannon, Torpedo, Torpdeo, Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Ibtisam')" class="reb rel">&#x2022;Ibtisam (28)<span id="Ibtisam" class="invis"><span class="pilotskill">6</span><span class="attack">3</span><span class="agility">1</span><span class="hull">3</span><span class="shields">5</span><br>Actions: Focus, Targetlock, Barrel Roll<br><br>When attacking or defending, if you have at least one stress token, you may reroll 1 of your dice.<br><br>Upgrade Slots: Sensor, Cannon, Torpedo, Torpdeo, Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Keyan Farlander')" class="reb rel">&#x2022;Keyan Farlander (29)<span id="Keyan Farlander" class="invis"><span class="pilotskill">7</span><span class="attack">3</span><span class="agility">1</span><span class="hull">3</span><span class="shields">5</span><br>Actions: Focus, Targetlock, Barrel Roll<br><br>When attacking, you may remove 1 stress token to change all of your focus results to hit results.<br><br>Upgrade Slots: Sensor, Cannon, Torpedo, Torpdeo, Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Ten Numb')" class="reb rel">&#x2022;Ten Numb (30*)<span id="Ten Numb" class="invis"><span class="pilotskill">8</span><span class="attack">3</span><span class="agility">1</span><span class="hull">3</span><span class="shields">5</span><br>Actions: Focus, Targetlock, Barrel Roll<br><br>When attacking, 1 of your critical results cannot be canceled by defense dice.<br><br>Upgrade Slots: Sensor, Cannon, Torpedo, Torpdeo, Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th title="" class="shp">X-Wing:</th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Rookie Pilot')" class="reb rel">Rookie Pilot (21)<span id="Rookie Pilot" class="invis"><span class="pilotskill">2</span><span class="attack">3</span><span class="agility">2</span><span class="hull">3</span><span class="shields">2</span><br>Actions: Focus, Targetlock.<br><br>No Card Text.<br><br>Upgrade Slots: Torpedo, Astromech.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Red Squadron Pilot')" class="reb rel">Red Squadron Pilot (23)<span id="Red Squadron Pilot" class="invis"><span class="pilotskill">4</span><span class="attack">3</span><span class="agility">2</span><span class="hull">3</span><span class="shields">2</span><br>Actions: Focus, Targetlock.<br><br>No Card Text.<br><br>Upgrade Slots: Torpedo, Astromech.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Biggs Darklighter')" class="reb rel">&#x2022;Biggs Darklighter* (25)<span id="Biggs Darklighter" class="invis"><span class="pilotskill">5</span><span class="attack">3</span><span class="agility">2</span><span class="hull">3</span><span class="shields">2</span><br>Actions: Focus, Targetlock.<br><br>Once per turn. When an opponent declares a friendly ship within range 1 of biggs as the target of an attack, if biggs is a valid target for any possible attacks the opponents ship can make, you may force your opponent to attack biggs instead. The new attack doesn't need to be with the same weapon.<br><br>Upgrade Slots: Torpedo, Astromech.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Garven Dreis')" class="reb rel">&#x2022;Garven Dreis (26)<span id="Garven Dreis" class="invis"><span class="pilotskill">6</span><span class="attack">3</span><span class="agility">2</span><span class="hull">3</span><span class="shields">2</span><br>Actions: Focus, Targetlock.<br><br>After spending a focus token, you may place that token on any other friendly ship at Range 1-2 (instead of discarding it).<br><br>Upgrade Slots: Torpedo, Astromech.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Luke Skywalker')" class="reb rel">&#x2022;Luke Skywalker (28)<span id="Luke Skywalker" class="invis"><span class="pilotskill">8</span><span class="attack">3</span><span class="agility">2</span><span class="hull">3</span><span class="shields">2</span><br>Actions: Focus, Targetlock.<br><br>When defending, you may change 1 of your focus results to an evade result.<br><br>Upgrade Slots: Torpedo, Astromech, Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Wedge Antilles')" class="reb rel">&#x2022;Wedge Antilles (29)<span id="Wedge Antilles" class="invis"><span class="pilotskill">9</span><span class="attack">3</span><span class="agility">2</span><span class="hull">3</span><span class="shields">2</span><br>Actions: Focus, Targetlock.<br><br>When attacking, reduce the defender's agility value by 1 (to a minimum of "0").<br><br>Upgrade Slots: Torpedo, Astromech, Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th title="" class="shp">Y-Wing:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Astromech, Torpedo, Torpedo, Turret Weapon" class="reb">Gold Squadron Pilot (18)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Astromech, Torpedo, Torpedo, Turret Weapon" class="reb">Gray Squadron Pilot (20)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Astromech, Torpedo, Torpedo, Turret Weapon" class="reb">"Dutch" Vander (23)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Astromech, Torpedo, Torpedo, Turret Weapon" class="reb">Horton Salm (24)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">E-Wing:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Astromech, Torpedo, System" class="reb">Knave Squadron Pilot (25)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Astromech, Torpedo, System" class="reb">Blackmoon Squadron Pilot (27)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Astromech, Torpedo, System, Elite Pilot Talent" class="reb">Etahn A'baht (30)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Astromech, Torpedo, System, Elite Pilot Talent" class="reb">Corran Horn (33)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">Z-95 Headhunter:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Missile" class="reb">Bandit Squadron Pilot (13)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Missile" class="reb">Tala Squadron Pilot (14)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Missile, Elite Pilot Talent" class="reb">Lieutenant Blount (17)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Missile, Elite Pilot Talent" class="reb">Airen Cracken (19)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">HWK-290:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Turret Weapon, Crew" class="reb">Rebel Operative (15)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Turret Weapon, Crew" class="reb">Roark Garnet (18)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Turret Weapon, Crew, Elite Pilot Talent" class="reb">Kyle Katarn (20)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Turret Weapon, Crew, Elite Pilot Talent" class="reb">Jan Ors (24)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">YT-1300:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Crew, Crew" class="reb">Outer Rim Smuggler (27)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Missle, Crew, Crew, Elite Pilot Talent" class="reb">Chewbacca (42) [from the first expansion]</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Missle, Crew, Crew, Elite Pilot Talent" class="reb">Lando Calrissian (44)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Missle, Crew, Crew, Elite Pilot Talent" class="reb">Han Solo (46) [from the first expansion]</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">YT-2400 Freighter:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Cannon, Missile, Crew" class="reb">Wild Space Fringer (30)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Cannon, Missile, Crew" class="reb">Eaden Vrill (32)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Cannon, Missile, Crew, Elite Pilot Talent" class="reb">"Leebo" (34)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Cannon, Missile, Crew, Elite Pilot Talent" class="reb">Dash Rendar (36)</th>
+  </tr>
+</table>
+
+
+<h2> Imperial ships:</h2>
+<table>
+  <tr>
+    <th title="" class="shp">TIE Advanced:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Missile" class="imp">Tempest Squadron Pilot (21)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Missile" class="imp">Storm Squadron Pilot (23)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Missile, Elite Pilot Talent" class="imp">Maarek Stele (27)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Missile, Elite Pilot Talent" class="imp">Darth Vader (29)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">TIE Bomber:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Torpedo, Torpedo, Missile, Missile, Bomb" class="imp">Scimitar Squadron Pilot (16)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Torpedo, Torpedo, Missile, Missile, Bomb" class="imp">Gamma Squadron Pilot (18)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Torpedo, Torpedo, Missile, Missile, Bomb, Elite Pilot Talent" class="imp">Captain Jonus (22)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Torpedo, Torpedo, Missile, Missile, Bomb, Elite Pilot Talent" class="imp">Major Rhymer (26)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">TIE Fighter:</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">Academy Pilot (12)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">Obsidian Squadron Pilot (13)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">Black Squadron Pilot (14)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">"Night Beast" (15)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">"Winged Gundark" (15)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">"Backstabber" (16)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">"Dark Curse" (16)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">"Mauler Mithel" (17)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">"Howlrunner" (18)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">TIE Interceptor:</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">Alpha Squadron Pilot (18)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">Avenger Squadron Pilot (20)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">Saber Squadron Pilot (21)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">Royal Guard Pilot (22)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">"Fel's Wrath" (22)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">Lieutenant Lorrir (22)</th>
+  </tr>
+  <tr>
+    <th title="No Upgrade Slots" class="imp">Kir Kanos (23)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">Tetran Cowall (24)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">Turr Phennir (25)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">Carnor Jax (26)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slot: Elite Pilot Talent" class="imp">Soontir Fel (27)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">TIE Phantom:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Crew, System" class="imp">Sigma Squadron Pilot (24)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Crew, System" class="imp">Shadow Squadron Pilot (26)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Crew, System, Elite Pilot Talent" class="imp">"Echo" (29)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: Crew, System, Elite Pilot Talent" class="imp">"Whisper" (31)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">Special Forces TIE:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: System, Missile, Tech" class="imp">Zeta Specialist (23)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: System, Missile, Tech, Elite Pilot Talent" class="imp">Omega Specialist (25)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: System, Missile, Tech, Elite Pilot Talent" class="imp">"Backdraft" (27)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: System, Missile, Tech, Elite Pilot Talent" class="imp">"Quickdraw" (29)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">Lambda-Class Shuttle:</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: System, Cannon, Crew, Crew" class="imp">Omicron Group Pilot (21)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: System, Cannon, Crew, Crew" class="imp">Captain Yorr (24)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: System, Cannon, Crew, Crew" class="imp">Colonel Jendon (26)</th>
+  </tr>
+  <tr>
+    <th title="Upgrade Slots: System, Cannon, Crew, Crew" class="imp">Captain Kagi (27)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">Firespray-31:</th>
+  </tr>
+  <tr>
+    <th title="PS: 3 Attack: 3 Agility: 2 Hull: 6 Shields: 4 Actions: Targetlock, Focus, Evade
+Upgrade Slots: Missile, Cannon, Bomb, Crew" class="imp">Bounty Hunter (33)</th>
+  </tr>
+  <tr>
+    <th title="PS: 5 Attack: 3 Agility: 2 Hull: 6 Shields: 4 Actions: Targetlock, Focus, Evade
+Upgrade Slots: Missile, Cannon, Bomb, Crew" class="imp">Krassis Trelix (35)</th>
+  </tr>
+  <tr>
+    <th title="PS: 7 Attack: 3 Agility: 2 Hull: 6 Shields: 4 Actions: Targetlock, Focus, Evade
+Upgrade Slots: Missile, Cannon, Bomb, Crew, Tech, Elite Pilot Talent" class="imp">Kath Scarlet (37)</th>
+  </tr>
+  <tr>
+    <th title="PS: 8 Attack: 3 Agility: 2 Hull: 6 Shields: 4 Actions: Targetlock, Focus, Evade
+Upgrade Slots: Missile, Cannon, Bomb, Crew, Tech, Elite Pilot Talent" class="imp">Boba Fett (38)</th>
+  </tr>
+  <tr>
+    <th title="" class="shp">VT-49 Decimator:</th>
+  </tr>
+  <tr>
+    <th title="PS: 3 Attack: 3 Agility: 0 Hull: 12 Shields: 4 Actions: Targetlock, Focus
+Upgrade Slots: Bomb, Crew, Crew, Crew, Torpedo" class="imp">Patrol Leader (40)</th>
+  </tr>
+  <tr>
+    <th title="PS: 4 Attack: 3 Agility: 0 Hull: 12 Shields: 4 Actions: Targetlock, Focus
+Upgrade Slots: Bomb, Crew, Crew, Crew, Torpedo, Elite Pilot Talent" class="imp">Captain Oicunn (42)</th>
+  </tr>
+  <tr>
+    <th title="PS: 6 Attack: 3 Agility: 0 Hull: 12 Shields: 4 Actions: Targetlock, Focus
+Upgrade Slots: Bomb, Crew, Crew, Crew, Torpedo, Elite Pilot Talent" class="imp">Commander Kenkirk (44)</th>
+  </tr>
+  <tr>
+    <th title="PS: 8 Attack: 3 Agility: 0 Hull: 12 Shields: 4 Actions: Targetlock, Focus
+Upgrade Slots: Bomb, Crew, Crew, Crew, Torpedo, Elite Pilot Talent" class="imp">Rear Admiral Chiraneau (46)</th>
   </tr>
 </table>
 
