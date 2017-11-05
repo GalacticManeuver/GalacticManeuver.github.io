@@ -66,6 +66,8 @@ body {
     line-height: 1.445em;
     -moz-border-radius: 1.445em;
     border-radius: 1.445em;}
+.reararc, .attack.reararc {
+    text-decoration: underline overline;}
 
 .agility {
     color: rgb(0, 224, 0);
