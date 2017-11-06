@@ -118,22 +118,28 @@ body {
     border-color: rgb(0, 92, 230);}
 
 .edited {color:rgb(255, 255, 0);}
-.shp {font-size:2em;font-weight:bold;background-color:rgb(0, 0, 0);}
+.shp {font-size:1.375em;font-weight:bold;background-color:rgb(0, 0, 0);}
 
 table {
     text-align: left;
-    width: 25em;
-    font-size:1.5em;
+    width: 17.5em;
+    font-size:2em;
 }
+th {
+    height:1.75em;
+}
+p {font-size: 2em;}
 
 tr:nth-child(even) {background-color: rgb(128, 128, 128)}
 
-h1 {font-size: 3em;}
-h2 {font-size: 2.5em;}
+h1 {font-size: 4em; min-width: 45em;}
+h2 {font-size: 3.2em;}
 
 a:hover {color: yellow;}
 
 a:active {color: black;}
+
+.action {font-size:1.25em;}
 
 .name {font-size:1.75em;}
 
@@ -152,5 +158,5 @@ a:active {color: black;}
     z-index: 100;
     top: 0em;
     padding:0.1875em;
-    left:25em;
+    left:17.5em;
 }

@@ -21,6 +21,10 @@
 
 <h1>This is the card list & rule changes & Change log page</h1>
 
+<h2>Rule Changes:</h2>
+<p>Range modifiers changed to give +1 attack die to the attacker at the closest range a weapon has, and +1 defense die to the defender at the farthest range a weapon has. Only missiles and torpedoes are exempt.</p>
+<p>When flying over and shooting through multiple Obstacles, they all take effect.</p>
+
 <h2> Rebel ships:</h2>
 <table>
   <tr>
@@ -397,7 +401,7 @@
     <th onclick="showstats('Tansarii Point Veteran')" class="scm rel">Tansarii Point Veteran (16*)<span id="Tansarii Point Veteran" class="invis"><span class="name">Tansarii Point Veteran (16*)</span><br><span class="pilotskill">5</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">1</span><br>Actions: Focus, Targetlock, Barrel Roll, Evade.<br><br>No Card Text.<br><br>Upgrade Slot: Elite Pilot Talent.</span></th>
   </tr>
   <tr>
-    <th onclick="showstats('Laetin A'shera')" class="scm rel">&#x2022;Laetin A'shera (16*)<span id="Laetin A'shera" class="invis"><span class="name">&#x2022;Laetin A'shera (16*)</span><br><span class="pilotskill">6</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">1</span><br>Actions: Focus, Targetlock, Barrel Roll, Evade.<br><br>After you defend against an attack, if the attack did not hit, you may assign 1 evade token to your ship.<br><br>No Upgrade Slots.</span></th>
+    <th onclick="showstats('Laetin Ashera')" class="scm rel">&#x2022;Laetin A'shera (16*)<span id="Laetin Ashera" class="invis"><span class="name">&#x2022;Laetin A'shera (16*)</span><br><span class="pilotskill">6</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">1</span><br>Actions: Focus, Targetlock, Barrel Roll, Evade.<br><br>After you defend against an attack, if the attack did not hit, you may assign 1 evade token to your ship.<br><br>No Upgrade Slots.</span></th>
   </tr>
   <tr>
     <th onclick="showstats('Serissu')" class="scm rel">&#x2022;Serissu (20)<span id="Serissu" class="invis"><span class="name">&#x2022;Serissu (20)</span><br><span class="pilotskill">8</span><span class="attack">2</span><span class="agility">3</span><span class="hull">2</span><span class="shields">1</span><br>Actions: Focus, Targetlock, Barrel Roll, Evade.<br><br>When another friendly ship at Range 1 is defending, it may reroll 1 defense die.<br><br>Upgrade Slot: Elite Pilot Talent.</span></th>
@@ -481,18 +485,111 @@
     <th title="" class="shp">Lancer-class Pursuit Craft:</th>
   </tr>
   <tr>
-    <th onclick="showstats('Shadowport Hunter')" class="scm rel">Shadowport Hunter (33)<span id="Shadowport Hunter" class="invis"><span class="name"></span>Shadowport Hunter (33)<span class="pilotskill">2</span><span class="attack front+">3</span><span class="agility">2</span><span class="hull">7</span><span class="shields">3</span><br>Actions: Focus, Targetlock, Evade, Rotate Arc.<br><br>No Card Text.<br><br>Upgrade Slots: Crew, Illicit, Illicit.</span></th>
+    <th onclick="showstats('Shadowport Hunter')" class="scm rel">Shadowport Hunter (33)<span id="Shadowport Hunter" class="invis"><span class="name">Shadowport Hunter (33)</span><br><span class="pilotskill">2</span><span class="attack front+">3</span><span class="agility">2</span><span class="hull">7</span><span class="shields">3</span><br>Actions: Focus, Targetlock, Evade, Rotate Arc.<br><br>No Card Text.<br><br>Upgrade Slots: Crew, Illicit, Illicit.</span></th>
   </tr>
   <tr>
-    <th onclick="showstats('Sabine Wren S&V')" class="scm rel">&#x2022;Sabine Wren (35)<span id="Sabine Wren S&V" class="invis"><span class="name"></span>&#x2022;Sabine Wren (35)<span class="pilotskill">5</span><span class="attack front+">3</span><span class="agility">2</span><span class="hull">7</span><span class="shields">3</span><br>Actions: Focus, Targetlock, Evade, Rotate Arc.<br><br>When defending against an enemy ship inside your mobile firing arc at Range 1-2, you may add 1 Focus result to your roll.<br><br>Upgrade Slots: Crew, Illicit, Illicit.</span></th>
+    <th onclick="showstats('Sabine Wren S&V')" class="scm rel">&#x2022;Sabine Wren (35)<span id="Sabine Wren S&V" class="invis"><span class="name">&#x2022;Sabine Wren (35)</span><br><span class="pilotskill">5</span><span class="attack front+">3</span><span class="agility">2</span><span class="hull">7</span><span class="shields">3</span><br>Actions: Focus, Targetlock, Evade, Rotate Arc.<br><br>When defending against an enemy ship inside your mobile firing arc at Range 1-2, you may add 1 Focus result to your roll.<br><br>Upgrade Slots: Crew, Illicit, Illicit.</span></th>
   </tr>
   <tr>
-    <th onclick="showstats('Asajj Ventress')" class="scm rel">&#x2022;Asajj Ventress (37)<span id="Asajj Ventress" class="invis"><span class="name"></span>&#x2022;Asajj Ventress (37)<span class="pilotskill">6</span><span class="attack front+">3</span><span class="agility">2</span><span class="hull">7</span><span class="shields">3</span><br>Actions: Focus, Targetlock, Evade, Rotate Arc.<br><br>At the start of the Combat phase, you may choose a ship at Range 1-2. If it is inside your mobile firing arc, assign 1 stress token to it.<br><br>Upgrade Slots: Elite Pilot Talent, Crew, Illicit, Illicit.</span></th>
+    <th onclick="showstats('Asajj Ventress')" class="scm rel">&#x2022;Asajj Ventress (37)<span id="Asajj Ventress" class="invis"><span class="name">&#x2022;Asajj Ventress (37)</span><br><span class="pilotskill">6</span><span class="attack front+">3</span><span class="agility">2</span><span class="hull">7</span><span class="shields">3</span><br>Actions: Focus, Targetlock, Evade, Rotate Arc.<br><br>At the start of the Combat phase, you may choose a ship at Range 1-2. If it is inside your mobile firing arc, assign 1 stress token to it.<br><br>Upgrade Slots: Elite Pilot Talent, Crew, Illicit, Illicit.</span></th>
   </tr>
   <tr>
     <th onclick="showstats('Ketsu Onyo')" class="scm rel">&#x2022;Ketsu Onyo* (38)<span id="Ketsu Onyo" class="invis"><span class="name">&#x2022;Ketsu Onyo (38)</span><br><span class="pilotskill">7</span><span class="attack front+">3</span><span class="agility">2</span><span class="hull">7</span><span class="shields">3</span><br>Actions: Focus, Targetlock, Evade, Rotate Arc.<br><br>At the start of the Combat phase, you may choose a ship at Range 1. If it is inside your primary and mobile firing arcs, assign 1 tractor beam token to it.<br>(See Tractor Beam Rule Changes)<br><br>Upgrade Slots: Elite Pilot Talent, Crew, Illicit, Illicit.</span></th>
   </tr>
 </table>
-<p><br><br><br><br><br><br><br><br><br><br><br><br>This is where the changelog will go.<br><br><br><br><br><br><br><br><br><br><br>For now it's just here so that i can ignore something that wont even be a problem once the change log is put in.</p>
+
+<h2>Upgrade Cards:</h2>
+<table>
+  <tr>
+    <th title="" class="shp">Elite Pilot Talents:</th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Adaptability')" class="any rel">Adaptability (0)<span id="Adaptability" class="invis"><span class="name">Adaptability (0)</span><br><br>Duel Card.<br><br>(Up Side) Increase your pilot skill value by 1.<br>(Down Side) Decrease your pilot skill value by 1.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Adrenaline Rush')" class="any rel">Adrenaline Rush (1)<span id="Adrenaline Rush" class="invis"><span class="name">Adrenaline Rush (1)</span><br><br>This Space is Intentionally Left Blank.<br><br>When you reveal a red maneuver, you may discard this card to treat that maneuver as a white maneuver until the end of the Activation phase.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Calculation')" class="any rel">Calculation (1)<span id="Calculation" class="invis"><span class="name">Calculation (1)</span><br><br>This Space is Intentionally Left Blank.<br><br>When attacking, you may spend a focus token to change 1 of your focus results to a critical result.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Crack Shot')" class="any rel">Crack Shot (1)<span id="Crack Shot" class="invis"><span class="name">Crack Shot (1)</span><br><br>This Space is Intentionally Left Blank.<br><br>When attacking a ship inside your firing arc, at the start of the "Compare Results" step, you may discard this card to cancel 1 of the defender's evade results.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Deadeye')" class="any rel">Deadeye* (1)<span id="Deadeye" class="invis"><span class="name">Deadeye* (1)</span><br><br>This Space is Intentionally Left Blank.<br><br>You may treat the "Attack (Target Lock):" header as "Attack (Focus):". When an attack instructs you to spend a target lock, you may spend a focus token instead.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Determination')" class="any rel">Determination (1)<span id="Determination" class="invis"><span class="name">Determination (1)</span><br><br>This Space is Intentionally Left Blank.<br><br>When you are dealt a faceup Damage card with the Pilot trait, discard it immediately without resolving its effect.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Draw Their Fire')" class="any rel">Draw Their Fire (1)<span id="Draw Their Fire" class="invis"><span class="name">Draw Their Fire (1)</span><br><br>This Space is Intentionally Left Blank.<br><br>When a friendly ship at Range 1 is hit by an attack, you may suffer 1 of the uncanceled critical results instead of the target ship.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Lightning Reflexes')" class="any rel">Lightning Reflexes (1)<span id="Lightning Reflexes" class="invis"><span class="name">Lightning Reflexes (1)</span><br><br>Small Ship only.<br><br>After you execute a white or green maneuver on your dial, you may discard this card to rotate your ship 180°. Then receive 1 stress token after the "Check Pilot Stress" step.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Veteran Instincts')" class="any rel">Veteran Instincts (1)<span id="Veteran Instincts" class="invis"><span class="name">Veteran Instincts (1)</span><br><br>This Space is Intentionally Left Blank.<br><br>Increase your pilot skill value by 2.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Wired')" class="any rel">Wired (1)<span id="Wired" class="invis"><span class="name">Wired (1)</span><br><br>This Space is Intentionally Left Blank.<br><br>When attacking or defending, if you are stressed, you may reroll 1 or more of your Focus results.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Elusiveness')" class="any rel">Elusiveness (1*)<span id="Elusiveness" class="invis"><span class="name">Elusiveness (1*)</span><br><br>This Space is Intentionally Left Blank.<br><br>When defending, you may receive 1 stress token to choose 1 attack die. The attacker must reroll that die. If you have at least 1 stress token, you cannot use this ability.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Expert Handling')" class="any rel">Expert Handling (1*)<span id="Expert Handling" class="invis"><span class="name">Expert Handling (1*)</span><br><br>This Space is Intentionally Left Blank.<br><br><span class="action">Action:</span> Perform a free barrel roll action. If you do not have the barrel roll action icon, receive 1 stress token. You may then remove 1 enemy target lock from your ship.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Bodyguard')" class="scm rel">&#x2022;Bodyguard (1*)<span id="Bodyguard" class="invis"><span class="name">&#x2022;Bodyguard (1*)</span><br><br>Scum only.<br><br>At the start of the Combat phase, you may spend a focus token to choose a friendly ship at Range 1 with a higher pilot skill than you. Increase its agility value by 1 until the end of the round.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Intimidation')" class="any rel">Intimidation (2)<span id="Intimidation" class="invis"><span class="name">Intimidation (2)</span><br><br>This Space is Intentionally Left Blank.<br><br>When you are touching an enemy ship, reduce that ship's agility value by 1.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Lone Wolf')" class="any rel">&#x2022;Lone Wolf (2)<span id="Lone Wolf" class="invis"><span class="name">&#x2022;Lone Wolf (2)</span><br><br>This Space is Intentionally Left Blank.<br><br>When attacking or defending, if there are no other friendly ships at Range 1-2, you may reroll 1 of your blank results.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Marksmanship')" class="any rel">Marksmanship (2*)<span id="Marksmanship" class="invis"><span class="name">Marksmanship (2*)</span><br><br>This Space is Intentionally Left Blank.<br><br><span class="action">Action:</span> When attacking this round, you may change 1 of your focus results to a critical result and all your other focus results to hit results.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Squad Leader')" class="any rel">&#x2022;Squad Leader (2)<span id="Squad Leader" class="invis"><span class="name">&#x2022;Squad Leader (2)</span><br><br>This Space is Intentionally Left Blank.<br><br>Action: Choose 1 ship at Range 1-2 that has a lower pilot skill than you. The chosen ship may immediately perform 1 free action.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Stay On Target')" class="any rel">Stay On Target (2)<span id="Stay On Target" class="invis"><span class="name">Stay On Target (2)</span><br><br>This Space is Intentionally Left Blank.<br><br>When you reveal a maneuver, you may rotate your dial to another maneuver with the same speed. Treat your maneuver as a red maneuver.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Swarm Tactics')" class="any rel">Swarm Tactics (2)<span id="Swarm Tactics" class="invis"><span class="name">Swarm Tactics (2)</span><br><br>This Space is Intentionally Left Blank.<br><br>At the start of the Combat phase, you may choose 1 friendly ship at Range 1. Until the end of this phase, tread the chose ship as if its pilot skill were equal to your pilot skill.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Wingman')" class="any rel">Wingman* (2)<span id="Wingman" class="invis"><span class="name">Wingman* (2)</span><br><br>This Space is Intentionally Left Blank.<br><br>Once per turn, at the end of any phase, remove 1 stress token from another friendly ship at Range 1.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Decoy')" class="any rel">Decoy (2)<span id="Decoy" class="invis"><span class="name">Decoy (2)</span><br><br>This Space is Intentionally Left Blank.<br><br>At the start of the Combat phase, you may choose 1 friendly ship at Range 1-2. Exchange your pilot skill with that ships pilot skill until the end of the phase.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Expose')" class="any rel">Expose (2*)<span id="Expose" class="invis"><span class="name">Expose (2*)</span><br><br>This Space is Intentionally Left Blank.<br><br><span class="action">Action:</span> Until the end of the round, increase your primary weapon value by 1 and decrease your agility value by 1.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Daredevil')" class="any rel">Daredevil* (3)<span id="Daredevil" class="invis"><span class="name">Daredevil* (3)</span><br><br>This Space is Intentionally Left Blank.<br><br><span class="action">Action:</span> Execute a white (Left Turn 1) or (Right Turn 1) maneuver. Then, if you do not have the boost action, receive 2 stress tokens.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Outmaneuver')" class="any rel">Outmaneuver (3)<span id="Outmaneuver" class="invis"><span class="name">Outmaneuver (3)</span><br><br>This Space is Intentionally Left Blank.<br><br>When attacking a ship inside your firing arc, if you are not inside that ship's firing arc, reduce its agility value by 1 (to a minimum of 0).<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Predator')" class="any rel">Predator (3)<span id="Predator" class="invis"><span class="name">Predator (3)</span><br><br>This Space is Intentionally Left Blank.<br><br>When attacking, you may reroll 1 attack die. If the defender's pilot skill value is "2" or lower, you may instead reroll up to 2 attack die.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Push the Limit')" class="any rel">Push the Limit (3)<span id="Push the Limit" class="invis"><span class="name">Push the Limit (3)</span><br><br>This Space is Intentionally Left Blank.<br><br>Once per round, after you perform an action,  you may perform 1 free action shown in your action bar. Then receive 1 stress token.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Opportunist')" class="any rel">Opportunist (3*)<span id="Opportunist" class="invis"><span class="name">Opportunist (3*)</span><br><br>This Space is Intentionally Left Blank.<br><br>when attacking, if the defender does not have any focus or evade tokens, you may receive 1 stress token to roll 1 additional attack die. You cannot use this ability if you have any stress tokens.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('Ruthlessness')" class="imp rel">Ruthlessness (3)<span id="Ruthlessness" class="invis"><span class="name">Ruthlessness (3)</span><br><br>Imperial only.<br><br>After you perform an attack this hits, you must choose 1 other ship at Range 1 of the defender (other than yourself). That ship suffers 1 damage.<br><br>Elite Pilot Talent.</span></th>
+  </tr>
+</table>
+
+<p><br><br><br><br><br><br>This is where the changelog will go.<br><br><br><br><br>For now it's just here so that i can ignore something that wont even be a problem once the change log is put in.</p>
+
 </body>
 </html>
