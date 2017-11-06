@@ -22,7 +22,7 @@ body {
 .reb:link {color: rgb(255, 0, 191);}
 .imp {background-color: rgba(0, 0, 102, 0.752);}
 .imp:hover {background-color: rgba(32, 32, 134, 0.752);}
-.imp:link {color: rgb(102, 204, 255):}
+.imp:link {color: rgb(102, 204, 255);}
 .scm {background-color: rgba(0, 153, 0, 0.69);}
 .scm:hover {background-color: rgba(32, 185, 32, 0.69);}
 .scm:link {color: rgb(191, 128, 64);}
