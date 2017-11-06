@@ -7,7 +7,7 @@ body {
     float: left;
     display: block;
     text-align: center;
-    padding: 0.625em 0.9375em;
+    padding: 1em 1.375em;
 }
 
 .topnav:hover {
@@ -126,14 +126,16 @@ table {
     font-size:2em;
 }
 th {
-    height:1.75em;
+    height:3em;
 }
 p {font-size: 2em;}
 
 tr:nth-child(even) {background-color: rgb(128, 128, 128)}
 
-h1 {font-size: 4em; min-width: 45em;}
+h1 {font-size: 4em; min-width: 25em;}
 h2 {font-size: 3.2em;}
+
+a {font-size: 2em;}
 
 a:hover {color: yellow;}
 
