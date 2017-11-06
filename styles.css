@@ -135,6 +135,7 @@ a:hover {color: yellow;}
 
 a:active {color: black;}
 
+.name {font-size:1.75em;}
 
 .rel {position: relative;}
 
