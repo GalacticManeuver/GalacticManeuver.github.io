@@ -27,6 +27,9 @@ body {
 .scm:hover {background-color: rgba(32, 185, 32, 0.69);}
 .scm:link {color: rgb(191, 128, 64);}
 
+.rebscm {background: linear-gradient(to bottom, rgba(204, 0, 0, 0.69), rgba(204, 0, 0, 0.69), rgba(204, 0, 0, 0.69), rgba(0, 153, 0, 0.69),  rgba(0, 153, 0, 0.69), rgba(0, 153, 0, 0.69));}
+.rebscm:hover {background: linear-gradient(to top, rgba(236, 32, 32, 0.69), rgba(236, 32, 32, 0.69), rgba(236, 32, 32, 0.69), rgba(32, 185, 32, 0.69), rgba(32, 185, 32, 0.69), rgba(32, 185, 32, 0.69));}
+
 .pilotskill {
     color: rgb(255, 153, 0);
     font-size: 1.75em;
@@ -117,6 +120,22 @@ body {
     border-width: 0.2em;
     border-color: rgb(0, 92, 230);}
 
+.range {
+    color: rgb(180, 180, 180);
+    font-size: 1.75em;
+    background-color: rgb(20, 20, 20);
+    margin: 0.3em;
+    display: inline-block;
+    height: 1.75em;
+    width: 1.75em;
+    line-height: 1.75em;
+    -moz-border-radius: 1.75em;
+    border-radius: 1.75em;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: rgb(180, 180, 180);}
+
 .edited {color:rgb(255, 255, 0);}
 .shp {font-size:1.375em;font-weight:bold;background-color:rgb(0, 0, 0);}
 
@@ -141,9 +160,9 @@ a:hover {color: yellow;}
 
 a:active {color: black;}
 
-.action {font-size:1.25em;}
+.action {font-size: 1.25em; color: rgb(180, 180, 180);}
 
-.name {font-size:1.75em;}
+.name {font-size: 1.75em;}
 
 .rel {position: relative;}
 
