@@ -2,13 +2,14 @@
 <html>
 <title>A Fan Made X-Wing Miniatures Rebalance Webiste & Squad Builder</title>
 <head>
+  <meta charset="utf-8"/>
   <link rel="stylesheet" href="styles.css">
   <script src="drinking.js"></script>
 </head>
 <body>
 
 
-<div>
+<div class="topnavdiv">
   <a class="topnav any" href="#">Home</a>
   <a class="topnav reb" href="rebel">Rebel</a>
   <a class="topnav imp" href="imperial">Imperial</a>
@@ -19,30 +20,47 @@
 
 <h1>A Fan Made X-Wing Rebalance Soon to be Squad Builder!</h1>
 
+<p id="a"></p>
+
 <table>
   <tr>
-    <th title="and this is where card info will appear" class="any">This is how Any Faction cards will appear</th>
+    <th title="" class="shp">This is what cards look like:</th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="any">Hover over us!</th>
+    <th onclick="showstats('example01')" class="reb rel">Click on these buttons to gain more information.<span id="example01" class="invis">The buttons that say "Colors." have no new information for being pressed.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="reb">This is how Rebel only cards will appear</th>
+    <th onclick="showstats('example02')" class="reb rel">Cards with a * next to the points means that the points value has been altered<span id="example02" class="invis">Cards with a * next to the name mean that something besides the points has been altered</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="reb">Hover over us!</th>
+    <th onclick="showstats('example03')" class="imp rel">This is what a ship card will look like:<span id="example03" class="invis"><span class="name">[Pilot Name] (Pts.)</span><br><span class="pilotskill">PS</span><span class="attack">AT</span><span class="agility">AG</span><span class="hull">H</span><span class="shields">S</span><br>Actions: Focus, Target Lock.<br><br>No Card Text.<br><br>No Upgrade Slot.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="imp">This is how Imperial only cards will appear</th>
+    <th onclick="showstats('example04')" class="imp rel">This is what a Upgrade card will look like:<span id="example04" class="invis"><span class="name">[Upgrade Name] (Pts.)</span><br><br>[Upgrade Text]<br><br>[Upgrade Type]</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="imp">Hover over us!</th>
+    <th onclick="showstats('example05')" class="scm rel">Colors.<span id="example05" class="invis">Colors.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="scm">This is how Scum & Villany only cards will appear</th>
+    <th onclick="showstats('example06')" class="scm rel">Colors.<span id="example06" class="invis">Colors.</span></th>
   </tr>
   <tr>
-    <th title="and this is where card info will appear" class="scm">Hover over us!</th>
+    <th onclick="showstats('example07')" class="any rel">Colors.<span id="example07" class="invis">Colors.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('example08')" class="any rel">Colors.<span id="example08" class="invis">Colors.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('example09')" class="rebscm rel">Colors.<span id="example09" class="invis">Colors.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('example10')" class="rebscm rel">Colors.<span id="example10" class="invis">Colors.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('example11')" class="impscm rel">Colors.<span id="example11" class="invis">Colors.</span></th>
+  </tr>
+  <tr>
+    <th onclick="showstats('example12')" class="impscm rel">Colors.<span id="example12" class="invis">Colors.</span></th>
   </tr>
 </table>
 

@@ -1,6 +1,6 @@
 body {
     background-color: #000000;
-    color: #ffffff;}
+    color: rgb(225, 225, 225);}
 
 .topnavdiv {
     min-width: 100em;}
@@ -14,9 +14,9 @@ body {
 .topnav:hover {
     background-color:#ffffff}
 
-.any  {background-color: rgba(64, 64, 64, 0.815);}
-.any:hover {background-color: rgba(96, 96, 96, 0.815);}
-.any:link {color: rgb(191, 191, 191);}
+.any  {background-color: rgba(40, 40, 40, 0.815);}
+.any:hover {background-color: rgba(60, 60, 60, 0.815);}
+.any:link {color: rgb(180, 180, 180);}
 .reb {background-color: rgba(204, 0, 0, 0.69);}
 .reb:hover {background-color: rgba(236, 32, 32, 0.69);}
 .reb:link {color: rgb(255, 0, 191);}
@@ -28,7 +28,10 @@ body {
 .scm:link {color: rgb(191, 128, 64);}
 
 .rebscm {background: linear-gradient(to bottom, rgba(204, 0, 0, 0.69), rgba(204, 0, 0, 0.69), rgba(204, 0, 0, 0.69), rgba(0, 153, 0, 0.69),  rgba(0, 153, 0, 0.69), rgba(0, 153, 0, 0.69));}
-.rebscm:hover {background: linear-gradient(to top, rgba(236, 32, 32, 0.69), rgba(236, 32, 32, 0.69), rgba(236, 32, 32, 0.69), rgba(32, 185, 32, 0.69), rgba(32, 185, 32, 0.69), rgba(32, 185, 32, 0.69));}
+.rebscm:hover {background: linear-gradient(to bottom, rgba(236, 32, 32, 0.69), rgba(236, 32, 32, 0.69), rgba(236, 32, 32, 0.69), rgba(32, 185, 32, 0.69), rgba(32, 185, 32, 0.69), rgba(32, 185, 32, 0.69));}
+
+.impscm {background: linear-gradient(to bottom, rgba(0, 0, 102, 0.752), rgba(0, 0, 102, 0.752), rgba(0, 0, 102, 0.752), rgba(0, 153, 0, 0.69),  rgba(0, 153, 0, 0.69), rgba(0, 153, 0, 0.69));}
+.impscm:hover {background: linear-gradient(to bottom, rgba(32, 32, 134, 0.752), rgba(32, 32, 134, 0.752), rgba(32, 32, 134, 0.752), rgba(32, 185, 32, 0.69), rgba(32, 185, 32, 0.69), rgba(32, 185, 32, 0.69));}
 
 .pilotskill {
     color: rgb(255, 153, 0);
@@ -137,7 +140,7 @@ body {
     border-color: rgb(180, 180, 180);}
 
 .edited {color:rgb(255, 255, 0);}
-.shp {font-size:1.375em;font-weight:bold;background-color:rgb(0, 0, 0);}
+.shp {font-size:1.375em; font-weight:bold; background-color:rgb(0, 0, 0); color: rgb(255, 255, 255);}
 
 table {
     text-align: left;
@@ -149,9 +152,9 @@ th {
 }
 p {font-size: 2em;}
 
-tr:nth-child(even) {background-color: rgb(128, 128, 128)}
+tr:nth-child(even) {background-color: rgb(128, 128, 128);}
 
-h1 {font-size: 4em; min-width: 22em;}
+h1 {font-size: 4em;}
 h2 {font-size: 3.2em;}
 
 a {font-size: 2em;}
@@ -160,7 +163,7 @@ a:hover {color: yellow;}
 
 a:active {color: black;}
 
-.action {font-size: 1.25em; color: rgb(180, 180, 180);}
+.action {font-size: 1.25em; color: rgb(255, 255, 255);}
 
 .name {font-size: 1.75em;}
 
